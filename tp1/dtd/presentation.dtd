@@ -1,0 +1,23 @@
+<!ELEMENT présentation (en-tête,diapositive+)>
+<!ELEMENT en-tête (modèle+)>
+
+<!ELEMENT modèle EMPTY>
+<!ATTLIST modèle couleur CDATA #REQUIRED>
+<!ATTLIST modèle taille CDATA #REQUIRED>
+
+<!ELEMENT diapositive (titre,corps)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT corps (bloc+)>
+<!ELEMENT bloc (paragraphe|liste|image)>
+<!ELEMENT paragraphe (#PCDATA|gras|italique|couleur)*>
+
+<!ELEMENT gras (#PCDATA)>
+<!ATTLIST gras couleur CDATA #IMPLIED>
+
+<!ELEMENT italique (#PCDATA)>
+<!ATTLIST italique couleur CDATA #IMPLIED>
+
+<!ELEMENT couleur (#PCDATA)>
+<!ELEMENT image EMPTY>
+<!ELEMENT liste (item+)>
+<!ELEMENT item (paragraphe+|liste)*>

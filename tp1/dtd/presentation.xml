@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE présentation SYSTEM "presentation.dtd">
+
+<présentation xmlns="urn:presentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema"
+	xsi:schemaLocation="urn:presentation presentation.xsd">
+	<en-tête>
+		<modèle couleur="#FFFF" taille="15"></modèle>
+	</en-tête>
+	<diapositive>
+		<titre>Mon titre</titre>
+		<corps>
+			<bloc>
+				<paragraphe>
+					<gras>gras</gras>
+					<italique>italique</italique>
+					<couleur>couleur</couleur>
+					Ma liste ci-dessous
+				</paragraphe>
+			</bloc>
+			<bloc>
+				<liste>
+					<item>
+						<paragraphe>Ma sous liste ci-dessous</paragraphe>
+						<liste>
+							<item>
+								<paragraphe>Mon item <gras>en gras</gras></paragraphe>
+							</item>
+						</liste>
+					</item>
+				</liste>
+			</bloc>
+		</corps>
+	</diapositive>
+</présentation>
